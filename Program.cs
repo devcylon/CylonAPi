@@ -18,7 +18,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<CylonContext, CylonContext>();
 builder.Services.AddControllers();
 builder.Services.AddTransient<ProjetoRepository, ProjetoRepository>();
-
+builder.Services.AddTransient<UsuarioRepository, UsuarioRepository>();
 
 var app = builder.Build();
 
